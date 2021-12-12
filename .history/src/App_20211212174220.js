@@ -15,13 +15,10 @@ const HatsPage = () => (
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/shop" component={ShopPage} />
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/shop" component={ShopPage} />
+    </Switch>
   );
 }
 
