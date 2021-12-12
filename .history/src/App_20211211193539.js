@@ -13,10 +13,12 @@ const HatsPage = () => (
 
 function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<HomePage />} />
-      <Route exact path="/hats" element={<HatsPage />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/hats" component={HatsPage} />
+      </Routes>
+    </div>
   );
 }
 

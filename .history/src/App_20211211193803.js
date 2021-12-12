@@ -15,7 +15,7 @@ function App() {
   return (
     <Routes>
       <Route exact path="/" element={<HomePage />} />
-      <Route exact path="/hats" element={<HatsPage />} />
+      <Route exact path="/hats" component={<HatsPage />} />
     </Routes>
   );
 }
