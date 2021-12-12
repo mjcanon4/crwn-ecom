@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./directory.styles.scss";
 
@@ -7,6 +8,8 @@ import MenuItem from "../menu-item/menu-item.component";
 class Directory extends React.Component {
   constructor() {
     super();
+
+    let navigate = useNavigate();
 
     this.state = {
       sections: [

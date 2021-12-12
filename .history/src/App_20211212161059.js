@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import "./App.css";
 
@@ -12,11 +12,13 @@ const HatsPage = () => (
 );
 
 function App() {
+  const navigate = useNavigate();
+
   return (
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="shop/hats" element={HatsPage} />
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<HomePage />} />
+      <Route exact path="shop/hats" element={<HatsPage />} />
+    </Routes>
   );
 }
 

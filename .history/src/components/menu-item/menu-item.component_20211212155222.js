@@ -1,7 +1,9 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./menu-item.styles.scss";
+
+let navigate = useNavigate();
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
@@ -21,4 +23,4 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   </div>
 );
 
-export default withRouter(MenuItem);
+export default navigate(MenuItem);
