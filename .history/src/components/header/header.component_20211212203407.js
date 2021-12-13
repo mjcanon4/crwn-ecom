@@ -24,7 +24,7 @@ const Header = ({ currentUser }) => (
           SIGN OUT
         </div>
       ) : (
-        <Link className="option" to="/signin"></Link>
+        <Link></Link>
       )}
     </div>
   </div>
