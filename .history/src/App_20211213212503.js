@@ -33,8 +33,7 @@ class App extends React.Component {
             },
           });
         });
-      } else if (!userAuth) {
-        this.setState({ currentUser: userAuth });
+        console.log(this.state);
       }
     });
   }

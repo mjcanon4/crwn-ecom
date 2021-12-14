@@ -29,12 +29,11 @@ class App extends React.Component {
           this.setState({
             currentUser: {
               id: snapShot.id,
-              ...snapShot.data(),
-            },
-          });
+              ...snapShot.data()
+            }
+          })
         });
-      } else if (!userAuth) {
-        this.setState({ currentUser: userAuth });
+        console.log(this.state;)
       }
     });
   }
