@@ -7,7 +7,7 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
     <input className="form-input" onChange={handleChange} {...otherProps} />
     {label ? (
       <label
-        className={`${otherProps.value ? "shrink" : ""} form-input-label`}
+        className={`${otherProps.value ? "shrink" : ""}`}
         // className="form-input-label"
       >
         {label}
